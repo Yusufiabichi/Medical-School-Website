@@ -480,7 +480,6 @@ header{
 .footer{
   display: flex;
   flex-wrap: wrap;
-  /* height: 350px; */
   width: 100%;
   gap: 10px;
   box-sizing: border-box;
@@ -491,7 +490,6 @@ header{
   flex-shrink: 1;
   flex-grow: 0;
   padding: 20px;
-  /* height: 300px; */
 }
 #f-card1, #f-card2, #f-card3 {
   color: #cccc;
