@@ -477,8 +477,6 @@ header{
 .apply div button:hover {
   background-color: #0265ce;
 }
-
-
 .footer{
   display: flex;
   flex-wrap: wrap;
