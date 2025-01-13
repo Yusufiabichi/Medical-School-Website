@@ -406,7 +406,6 @@ header{
     border: 1px solid rgb(75, 82, 92);
     border-radius: 3px;
     background-color: #222429;
-    /* text-align: center; */
     color: white;
 }
 .card h2 {
@@ -429,7 +428,6 @@ header{
 }
 .grid-container {
     display: grid;
-    /* border: 1px solid red; */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     justify-content: center;
