@@ -15,13 +15,26 @@ window.addEventListener("click", (e) =>{
   }
 });
 
-// window.onclick = function(event) {
-//   if (event.target == navMenu) {
-//       navMenu.classList.toggle("show");
-//   }
-// }
 
+      // slider js
+        let currentIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+        const dots = document.querySelectorAll(".dot");
+        
+        function moveSlide(index) {
+            currentIndex = index;
+            document.querySelector(".slider").style.transform = `translateX(-${index * 100}vw)`;
+            dots.forEach(dot => dot.classList.remove("active"));
+            dots[index].classList.add("active");
+        }
+        
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            moveSlide(currentIndex);
+        }, 5000);
+        //slider js ends here
 
+        
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry);
