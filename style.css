@@ -3,6 +3,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body{
@@ -75,6 +76,7 @@ header{
 }
 .header-apply-btn button:hover {
     background-color: #487eb0;
+    transform: scale(1.1);
 }
 .nav-link:hover{
     background-color: #487eb0;
@@ -109,9 +111,6 @@ header{
         color: #192a56;
 
     }
-    /* .close:hover{
-       background-color: #cccc;
-    } */
     .nav{
         position: fixed;
         top: 0;
@@ -123,8 +122,6 @@ header{
         z-index: 100;
         transition: 0.5s;
         border-radius: 0 0 0 50%;
-        /* background-color: rgb(0,0,0); Fallback color */
-        /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
         /* box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.1); */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
@@ -134,6 +131,7 @@ header{
     .nav-list{
         display: flex;
         flex-direction: column;
+        padding: 0;
     }
     .nav-item{
         margin: 2rem 0;
@@ -180,14 +178,14 @@ header{
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background: #ff6b6b;
+    background: #ff4c4c;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s;
 }
 .btn:hover {
-    background: #ff4c4c;
+    background: #ff6b6b;
 }
 .navigation {
     position: absolute;
@@ -234,7 +232,7 @@ header{
     filter: blur(0);
     transform: translateX(0);
   }
-  .about-us, .courses {
+  .about-us {
     display: flex;
     /* flex-wrap: wrap; */
     margin: 15px;
@@ -247,6 +245,27 @@ header{
   .about-contents {
     margin-left: 10px;
     padding: 20px;
+  }
+  .about-contents h1 {
+    font-size: 20px;
+  }
+  .about-contents p {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .about-contents a button{
+    padding: 10px;
+    background-color: #192a56;
+    color: #fff;
+    width: 120px;
+    margin-top: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    transition: all ease 1s;
+  }
+  .about-contents a button:hover {
+    transform: scale(1.1);
   }
   .tracking-in-expand-fwd {
 	-webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -411,6 +430,10 @@ header{
     .container1 div{
         flex-basis: 100%;
     }
+    .about-contents {
+        margin-left: 0;
+        padding: 0;
+      }
     
     .footer div{
       flex-basis: 100%;
