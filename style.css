@@ -130,48 +130,8 @@ header{
         right: 0;
     }
 }
-.slider {
-    position: relative;
-    max-width: 100%;
-    margin: auto;
-    overflow: hidden;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.8) 100%)
-  }
+
   
-  .slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .slide {
-    min-width: 100%;
-    box-sizing: border-box;
-    position: relative;
-  }
-  
-  .slide img {
-    width: 100%;
-    display: block;
-  }
-  
-  .description {
-    position: absolute;
-    bottom: 0;
-    /* background: rgba(0, 0, 0, 0.5); */
-    background-image: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.9) 100%);
-    color: white;
-    width: 100%;
-    text-align: center;
-    padding: 410px;
-    height: 600px;
-  }
-  .description h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   
   .desc {
     display: block;
