@@ -12,7 +12,7 @@ body{
     font-family: "Archivo Black", sans-serif;
     align-items: center;
     /* height: 3000px; */
-    background-color: #fff;
+    background-color: #f4f4f4;
 
 }
 a{
@@ -98,7 +98,7 @@ header{
     .toggle{
         display: inline;
         font-size: 25px;
-        color: #f0ffff;
+        color: #192a56;
     }
     .close{
         position: absolute;
@@ -106,7 +106,8 @@ header{
         display: block;
         font-size: 25px;
         border-radius: 50px;
-        color: white;
+        color: #192a56;
+
     }
     /* .close:hover{
        background-color: #cccc;
@@ -115,7 +116,7 @@ header{
         position: fixed;
         top: 0;
         right: -100%;
-        background-color: #001222;
+        background-color: #f4f4f4;
         width: 60%;
         height: 100vh;
         padding: 24px;
@@ -235,30 +236,17 @@ header{
   }
   .about-us, .courses {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin: 15px;
     padding: 15px;
   }
-  .about-us p, .courses p{
-    font-size: 15px;
-    padding: 15px 0px 15px 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  .about-img img{
+    width: 450px;
   }
-  .about-us h1, .courses h1{
-    font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-  }
-  .about-us a, .courses a{
-    width: 120px;
-    padding: 10px;
-    font-weight: 300;
-    background-color: #036bdb;
-    color: white;
-    border: none;
-    text-align: center;
-    border-radius: px;
-    cursor: pointer;
+  .about-contents {
+    margin-left: 10px;
+    padding: 20px;
   }
   .tracking-in-expand-fwd {
 	-webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -405,29 +393,30 @@ header{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
+@media (max-width: 815px) {
+    .about-us, .courses {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .about-img{
+        display: flex;
+        flex-basis: 100%;
+      }
+      .about-img img {
+        width: 100%;
+      }
+}
 
 @media(max-width: 650px) {
     .container1 div{
         flex-basis: 100%;
     }
+    
     .footer div{
       flex-basis: 100%;
     }
     .container2{
         grid-template-columns: 1fr;
-    }
-    .description {
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 350px
-    }
-    .description h1, .description p, .description button{
-      display: none;
-    }
-    .description h1{
-      font-size: 13px;
     }
     #first, #sec {
         border-bottom: 1px solid #cccc;
