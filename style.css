@@ -14,7 +14,7 @@ body{
     font-family: "Archivo Black", sans-serif;
     align-items: center;
     /* height: 3000px; */
-    background-color: #cccc;
+    background-color: #fff;
 
 }
 a{
@@ -23,26 +23,28 @@ a{
 }
 header{
     display: flex;
-    background-color: #192a56;
+    background-color: #fff;
     justify-content: space-around;
     padding: 1rem 0;
     align-items: center;
     position: fixed;
     top: 0;
     left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     z-index: 1;
 }
 .logo{
     display: flex;
     align-items: center;
-    color: #f0ffff;
+    color: #192a56;
 
 }
 .logo img{
     width: 90px;
     border-radius: 1px;
-    color: white;
+    color: #192a56;
+
 }
 .header-logo{
     font-size: 20px;
@@ -61,9 +63,20 @@ header{
     font-size: 1rem;
     border-radius: 5px;
     transition: 0.3s;
-    color: #ffffff;
+    color: #192a56;
     transition: all 1sec;
-
+}
+.header-apply-btn button{
+    padding: 10px;
+    width: 100px;
+    background-color: #192a56;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: all ease .5s;
+}
+.header-apply-btn button:hover {
+    background-color: #487eb0;
 }
 .nav-link:hover{
     background-color: #487eb0;
