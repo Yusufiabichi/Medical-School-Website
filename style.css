@@ -236,6 +236,13 @@ header{
     filter: blur(0);
     transform: translateX(0);
   }
+  .about-row {
+    padding-top: 70px;
+  }
+  .about-header {
+    padding-left: 15px;
+    margin-left: 15px;
+  }
   .about-us {
     display: flex;
     /* flex-wrap: wrap; */
@@ -274,7 +281,7 @@ header{
 
   /* service cards  */
   .services {
-    padding: 70px 15px;
+    padding: 15px 15px;
   }
   .services .services-content {
     display: grid;
