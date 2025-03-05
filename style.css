@@ -266,7 +266,7 @@ header{
     font-size: 15px;
     border-radius: 5px;
     border: none;
-    transition: all ease 1s;
+    transition: all ease .5s;
   }
   .about-contents a button:hover {
     transform: scale(1.1);
