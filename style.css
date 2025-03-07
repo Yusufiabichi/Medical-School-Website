@@ -540,6 +540,7 @@ header{
 }
 .card h2 {
     padding-bottom: 5px;
+    margin-top: 0;
     border-bottom: 1px solid #ccc;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
