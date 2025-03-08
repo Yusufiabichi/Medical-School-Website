@@ -147,7 +147,28 @@ header{
         right: 0;
     }
 }
-
+    .about-us {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .about-img{
+      display: flex;
+      flex-basis: 100%;
+    }
+    .about-img img {
+      width: 100%;
+    }
+    .apply {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .apply-img{
+      display: flex;
+      flex-basis: 100%;
+    }
+    .apply-img img {
+      width: 100%;
+    }
 .slider-container {
     position: relative;
     width: 100%;
@@ -239,38 +260,39 @@ header{
     filter: blur(0);
     transform: translateX(0);
   }
-  .about-row {
+  .about-row, .apply-row {
+
     padding-top: 70px;
   }
-  .about-header {
+  .about-header, .apply-header {
     padding-left: 15px;
     margin-left: 15px;
   }
-  .about-header h1 {
+  .about-header h1, .apply-header h1 {
     font-size: 25px;
   }
-  .about-us {
+  .about-us, .apply {
     display: flex;
     /* flex-wrap: wrap; */
     margin: 15px;
     padding: 15px;
   }
   
-  .about-img img{
+  .about-img img, .apply-img img{
     width: 450px;
   }
-  .about-contents {
+  .about-contents, .apply-contents {
     margin-left: 10px;
     padding: 20px;
   }
-  .about-contents h1 {
+  .about-contents h1, .apply-contents h1 {
     font-size: 20px;
   }
-  .about-contents p {
+  .about-contents p, .apply-contents p {
     margin-bottom: 10px;
     font-size: 15px;
   }
-  .about-contents a button{
+  .about-contents a button, .apply-contents a button{
     padding: 10px;
     background-color: #192a56;
     color: #fff;
@@ -281,7 +303,7 @@ header{
     border: none;
     transition: all ease .5s;
   }
-  .about-contents a button:hover {
+  .about-contents a button:hover, .apply-contents a button:hover {
     transform: scale(1.1);
   }
 
@@ -584,29 +606,8 @@ header{
   padding: 25px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.apply div h2 {
-  font-size: 20px;
-  padding-bottom: 15px;
-}
-#adm{
-  padding-top: 20px;
-}
-.apply div p {
-  padding: 0 0 15px 0;
-}
-.apply div button {
-  padding: 15px;
-  width: 150px;
-  font-size: 15px;
-  font-weight: bold;
-  border: none;
-  background-color: #036bdb;
-}
-.apply div button a{
-  color: #ffffff;
-}
-.apply div button:hover {
-  background-color: #0265ce;
+.apply {
+  display: flex;
 }
 .footer{
   display: flex;
