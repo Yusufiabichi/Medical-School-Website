@@ -21,13 +21,13 @@ body{
     align-items: center;
     /* height: 3000px; */
     background-color: #f4f4f4;
-    overflow-x: hidden;
-
 }
+
 a{
     color: black;
     font-family: "Poppins", sans-serif;
 }
+
 header{
     display: flex;
     background-color: #fff;
@@ -44,18 +44,19 @@ header{
     z-index: 2;
     /* overflow-x: hidden; */
 }
+
 .logo{
     display: flex;
     align-items: center;
     color: #192a56;
-
 }
+
 .logo img{
     width: 90px;
     border-radius: 1px;
     color: #192a56;
-
 }
+
 .header-logo{
     font-size: 20px;
     padding: 20px;
