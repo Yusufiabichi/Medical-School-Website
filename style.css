@@ -568,6 +568,22 @@ header{
     background-color: #f1f1f1;
     /* color: #cccc; */
 }
+.card button {
+  padding: 5px;
+  color: #000;
+  background-color: #fff;
+  font-size: 15px;
+  width: 100px;
+  border-radius: 5px;
+  font-weight: 500;
+  border: none;
+  transition: all ease .5s;
+}
+.card button:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
 .card h2 {
     padding-bottom: 5px;
     margin-top: 0;
