@@ -539,6 +539,17 @@ header{
       .about-img img {
         width: 100%;
       }
+      .apply {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .apply-img{
+        display: flex;
+        flex-basis: 100%;
+      }
+      .apply-img img {
+        width: 100%;
+      }
 }
 
 @media(max-width: 650px) {
