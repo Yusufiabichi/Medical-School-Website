@@ -87,8 +87,11 @@ header{
     transition: all ease .5s;
 }
 .header-apply-btn button:hover {
-    background-color: #487eb0;
-    transform: scale(1.1);
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #192a56;
+    font-weight: 400;
+    /* transform: scale(1.1); */
 }
 .nav-link:hover{
     background-color: #487eb0;
@@ -218,10 +221,12 @@ header{
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: background 0.3s ease-in-out;
 }
 .btn:hover {
-    background: #ff6b6b;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
 }
 .navigation {
     position: absolute;
@@ -306,13 +311,17 @@ header{
     color: #fff;
     width: 120px;
     margin-top: 10px;
+    font-weight: 600;
     font-size: 15px;
     border-radius: 5px;
     border: none;
     transition: all ease .5s;
   }
   .about-contents a button:hover, .apply-contents a button:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
+    background-color: transparent;
+    color: #192a56;
+    border: 2px solid #192a56;
   }
 
   /* service cards  */
