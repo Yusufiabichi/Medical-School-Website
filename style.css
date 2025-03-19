@@ -638,7 +638,7 @@ header{
     box-shadow: 1px 2px 5px #1a1919cc;
 }
 .apply div{
-  margin: 10px 0 10px 20px;
+  /* margin: 10px 0 10px 20px; */
   padding: 25px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
