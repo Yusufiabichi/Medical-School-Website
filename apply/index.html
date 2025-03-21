@@ -3,10 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apply</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Apply - Medical School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        const lgas = {
+            "Lagos": ["Alimosho", "Ikeja", "Eti-Osa", "Surulere"],
+            "Kano": ["Dala", "Fagge", "Gwale", "Tarauni"],
+            "Rivers": ["Port Harcourt", "Obio/Akpor", "Eleme", "Oyigbo"],
+            "Ogun": ["Abeokuta South", "Abeokuta North", "Sagamu", "Ijebu Ode"]
+        };
+
+        function updateLGA() {
+            const stateSelect = document.getElementById("state");
+            const lgaSelect = document.getElementById("lga");
+            const selectedState = stateSelect.value;
+
+            lgaSelect.innerHTML = "<option value=''>-- Select Local Government --</option>";
+            if (selectedState && lgas[selectedState]) {
+                lgas[selectedState].forEach(lga => {
+                    let option = document.createElement("option");
+                    option.value = lga;
+                    option.textContent = lga;
+                    lgaSelect.appendChild(option);
+                });
+                lgaSelect.disabled = false;
+            } else {
+                lgaSelect.disabled = true;
+            }
+        }
+    </script>
 </head>
-<body>
-    Apply page
+<body class="bg-gray-100 py-10">
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold text-center mb-6">Apply for a Course</h2>
+        
+        <!-- Courses Applying Section -->
+        <div class="mb-6">
+            <label for="course" class="block text-lg font-medium mb-2">Select a Course:</label>
+            <select id="course" name="course" class="w-full p-3 border rounded-lg">
+                <option value="">-- Choose a Course --</option>
+                <option value="mbbs">MBBS (Bachelor of Medicine, Bachelor of Surgery)</option>
+                <option value="bds">BDS (Bachelor of Dental Surgery)</option>
+                <option value="pharmacy">Pharmacy</option>
+                <option value="nursing">Nursing</option>
+            </select>
+        </div>
+        
+        <!-- Personal Information Section -->
+        <form action="#" method="POST" class="space-y-4" enctype="multipart/form-data">
+            <div>
+                <label for="name" class="block text-lg font-medium">Full Name:</label>
+                <input type="text" id="name" name="name" class="w-full p-3 border rounded-lg" required>
+            </div>
+            <div>
+                <label for="email" class="block text-lg font-medium">Email Address:</label>
+                <input type="email" id="email" name="email" class="w-full p-3 border rounded-lg" required>
+            </div>
+            <div>
+                <label for="phone" class="block text-lg font-medium">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" class="w-full p-3 border rounded-lg" required>
+            </div>
+            <div>
+                <label for="dob" class="block text-lg font-medium">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" class="w-full p-3 border rounded-lg" required>
+            </div>
+            <div>
+                <label for="nationality" class="block text-lg font-medium">Nationality:</label>
+                <input type="text" id="nationality" name="nationality" class="w-full p-3 border rounded-lg" required>
+            </div>
+            <div>
+                <label for="state" class="block text-lg font-medium">State:</label>
+                <select id="state" name="state" class="w-full p-3 border rounded-lg" onchange="updateLGA()" required>
+                    <option value="">-- Select State --</option>
+                    <option value="Lagos">Lagos</option>
+                    <option value="Kano">Kano</option>
+                    <option value="Rivers">Rivers</option>
+                    <option value="Ogun">Ogun</option>
+                </select>
+            </div>
+            <div>
+                <label for="lga" class="block text-lg font-medium">Local Government Area:</label>
+                <select id="lga" name="lga" class="w-full p-3 border rounded-lg" disabled required>
+                    <option value="">-- Select Local Government --</option>
+                </select>
+            </div>
+            <div>
+                <label for="address" class="block text-lg font-medium">Address:</label>
+                <textarea id="address" name="address" class="w-full p-3 border rounded-lg" rows="3" required></textarea>
+            </div>
+            <div>
+                <label for="photo" class="block text-lg font-medium">Upload Passport Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" class="w-full p-3 border rounded-lg" required>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-lg text-lg font-semibold hover:bg-blue-700">Submit Application</button>
+        </form>
+    </div>
 </body>
 </html>
